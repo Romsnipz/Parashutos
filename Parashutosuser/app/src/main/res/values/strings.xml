@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="app_name">Parashutos</string>
+    <string name="started">Parashutos</string>
+    <string name="info">О себе</string>
+    <string name="registration_button">РЕГИСТРАЦИЯ</string>
+    <string name="back">НАЗАД К ВХОДУ</string>
+    <string name="back_button">отмена</string>
+    <string name="error">Оййййййййй</string>
+    <string name="ipdead">Сеть умерла</string>
+    <string name="user_not_found">Такой пользователь не зарегестрирован</string>
+    <string name="incorrect_password">Неверный пароль, а функции поменять нет, ХА, вспоминай</string>
+    <string name="exit">Выйти</string>
+
+</resources>
