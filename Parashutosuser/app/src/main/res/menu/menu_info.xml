@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-    tools:context=".InfoActivity">
 
     <item
         android:id="@+id/action_settings1"
         android:orderInCategory="100"
         android:title="@string/exit"
-        app:showAsAction="always"/>
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/action_settings2"
+        android:orderInCategory="100"
+        android:title="@string/tostart"
+        app:showAsAction="ifRoom"/>
 
 </menu>

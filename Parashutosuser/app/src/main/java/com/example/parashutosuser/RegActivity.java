@@ -144,9 +144,11 @@ public class RegActivity extends AppCompatActivity {
                 LoginPair pair = response.body();
                 String status = pair.getStatus();
                 if (status.equals(LoginStatusEnum.SUCCES.getStatus())) {
-                    Intent intent = new Intent(RegActivity.this, InfoActivity.class);
-                    intent.putExtra("user", pair.getUser());
-                    intent.putExtra("info", pair.getInfo());
+                    Saveclass.setUser(pair.getUser());
+                    Saveclass.setInfo(pair.getInfo());
+                    Intent intent = new Intent(RegActivity.this, MainActivity.class);
+                    intent.putExtra("user", Saveclass.getUser());
+                    intent.putExtra("info", Saveclass.getInfo());
                     startActivity(intent);
                 } else if (status.equals(LoginStatusEnum.CLIENT_NOT_FOUND.getStatus())) {
                     Toast.makeText(RegActivity.this, getText(R.string.user_not_found),
@@ -181,9 +183,11 @@ public class RegActivity extends AppCompatActivity {
                     return;
                 }
                 LoginPair pair = response.body();
-                Intent intent = new Intent(RegActivity.this, InfoActivity.class);
-                intent.putExtra("user", pair.getUser());
-                intent.putExtra("info", pair.getInfo());
+                Saveclass.setUser(pair.getUser());
+                Saveclass.setInfo(pair.getInfo());
+                Intent intent = new Intent(RegActivity.this, MainActivity.class);
+                intent.putExtra("user", Saveclass.getUser());
+                intent.putExtra("info", Saveclass.getInfo());
                 startActivity(intent);
             }
 

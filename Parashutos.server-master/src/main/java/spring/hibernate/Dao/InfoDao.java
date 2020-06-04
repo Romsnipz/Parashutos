@@ -7,6 +7,8 @@ import spring.DTOs.InfoHTTPPojo;
 import spring.hibernate.entity.Info;
 import spring.hibernate.repository.InfoRepository;
 
+import java.util.Date;
+
 @Component
 @Transactional
 public class InfoDao {
@@ -23,7 +25,7 @@ public class InfoDao {
         info.setSurName(infoedit.getSurName());
         info.setFirstName(infoedit.getFirstName());
         info.setSecondName(infoedit.getSecondName());
-        info.setBirthday(infoedit.getBirthday());
+        info.setBirthday(new Date(infoedit.getBirthday()));
         info.setCity(infoedit.getCity());
         info.setDropzone(infoedit.getDropzone());
 

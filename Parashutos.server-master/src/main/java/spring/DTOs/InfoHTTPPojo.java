@@ -21,7 +21,7 @@ public class InfoHTTPPojo {
     private String secondName;
 
     @JsonProperty(value = "Birthday")
-    private Date birthday;
+    private Long birthday;
 
     @JsonProperty(value = "City")
     private String city;
@@ -61,11 +61,11 @@ public class InfoHTTPPojo {
         this.secondName = secondName;
     }
 
-    public Date getBirthday() {
+    public Long getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(Date birthday) {
+    public void setBirthday(Long birthday) {
         this.birthday = birthday;
     }
 
