@@ -4,6 +4,7 @@ import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
+import java.util.Date;
 
 public class InfoHTTPDto implements Serializable {
 
@@ -25,7 +26,7 @@ public class InfoHTTPDto implements Serializable {
 
     @SerializedName("Birthday")
     @Expose
-    private String birthday;
+    private Long birthday;
 
     @SerializedName("City")
     @Expose
@@ -67,11 +68,11 @@ public class InfoHTTPDto implements Serializable {
         this.secondName = secondName;
     }
 
-    public String getBirthday() {
+    public Long getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(String birthday) {
+    public void setBirthday(Long birthday) {
         this.birthday = birthday;
     }
 

@@ -20,17 +20,19 @@
             </intent-filter>
         </activity>
 
+        <activity android:name="com.example.parashutosuser.MainActivity"
+            android:theme="@style/CustomTheme"
+            android:label="@string/started">
+
+        </activity>
+
         <activity android:name="com.example.parashutosuser.InfoActivity"
             android:theme="@style/CustomTheme"
             android:label="@string/info">
 
         </activity>
 
-        <activity android:name="com.example.parashutosuser.MainActivity"
-            android:theme="@style/CustomTheme"
-            android:label="@string/started">
 
-        </activity>
 
     </application>
 

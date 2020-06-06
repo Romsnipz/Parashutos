@@ -19,8 +19,12 @@ import com.example.parashutosuser.rest.LoginApi;
 import com.example.parashutosuser.rest.NetworkService;
 
 import java.net.HttpURLConnection;
+import java.text.Format;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 import retrofit2.Call;
@@ -64,7 +68,17 @@ public class InfoActivity extends AppCompatActivity {
         editSecondName = (EditText) findViewById(R.id.editSecondName);
         editSecondName.setText(info.getSecondName());
         editTextDate = (EditText) findViewById(R.id.editTextDate);
-        editTextDate.setText(info.getBirthday());
+        String date = null;
+        if (info.getBirthday() != null) {
+            SimpleDateFormat datebirz = new SimpleDateFormat("dd.mm.yyyy");
+            try {
+                date = datebirz.format(info.getBirthday());
+            } catch (Exception e) {
+                e.printStackTrace();
+                return;
+            }
+        }
+        editTextDate.setText(date);
         editCity = (EditText) findViewById(R.id.editCity);
         editCity.setText(info.getCity());
         editDropzone = (EditText) findViewById(R.id.editDropzone);
@@ -88,7 +102,21 @@ public class InfoActivity extends AppCompatActivity {
                 request.setSurName(editSurName.getText().toString());
                 request.setFirstName(editFirstName.getText().toString());
                 request.setSecondName(editSecondName.getText().toString());
-                request.setBirthday(editTextDate.getText().toString());
+
+                Date date = null;
+                if (!editTextDate.getText().toString().equals("")) {
+                    SimpleDateFormat datebirz = new SimpleDateFormat("dd.mm.yyyy");
+                    try {
+                        date = datebirz.parse(editTextDate.getText().toString());
+                    } catch (ParseException e) {
+                        Toast.makeText(InfoActivity.this, getText(R.string.dateex),
+                                Toast.LENGTH_SHORT).show();
+                        e.printStackTrace();
+                        return;
+                    }
+                }
+                request.setBirthday(date != null ? date.getTime() : null);
+
                 request.setCity(editCity.getText().toString());
                 request.setDropzone(editDropzone.getText().toString());
 
@@ -127,6 +155,7 @@ public class InfoActivity extends AppCompatActivity {
                             Toast.LENGTH_SHORT).show();
                     return;
                 }
+                Saveclass.setInfo(request);
             }
 
             @Override
