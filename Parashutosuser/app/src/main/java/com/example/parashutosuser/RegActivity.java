@@ -98,6 +98,10 @@ public class RegActivity extends AppCompatActivity {
                 request.setUserPassword(editTextPassword.getText().toString());
 
                 doRegistration(request);
+
+                buttongoodreg.setVisibility(View.GONE);
+                editTextNick.setVisibility(View.GONE);
+                buttonok.setClickable(true);
             }
         });
 
@@ -182,13 +186,6 @@ public class RegActivity extends AppCompatActivity {
                             Toast.LENGTH_SHORT).show();
                     return;
                 }
-                LoginPair pair = response.body();
-                Saveclass.setUser(pair.getUser());
-                Saveclass.setInfo(pair.getInfo());
-                Intent intent = new Intent(RegActivity.this, MainActivity.class);
-                intent.putExtra("user", Saveclass.getUser());
-                intent.putExtra("info", Saveclass.getInfo());
-                startActivity(intent);
             }
 
             @Override
