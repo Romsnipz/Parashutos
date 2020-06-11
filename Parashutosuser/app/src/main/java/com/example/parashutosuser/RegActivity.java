@@ -99,6 +99,7 @@ public class RegActivity extends AppCompatActivity {
 
                 doRegistration(request);
 
+                buttonreg.setText(getResources().getString(R.string.registration_button));
                 buttongoodreg.setVisibility(View.GONE);
                 editTextNick.setVisibility(View.GONE);
                 buttonok.setClickable(true);

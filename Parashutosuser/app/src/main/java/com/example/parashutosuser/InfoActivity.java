@@ -12,7 +12,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-
 import com.example.parashutosuser.rest.DTOs.InfoHTTPDto;
 import com.example.parashutosuser.rest.DTOs.UserHTTPDto;
 import com.example.parashutosuser.rest.LoginApi;
@@ -30,7 +29,6 @@ import java.util.List;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-
 
 public class InfoActivity extends AppCompatActivity {
 
