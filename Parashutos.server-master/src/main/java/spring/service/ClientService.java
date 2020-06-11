@@ -83,7 +83,7 @@ public class ClientService {
                 infoHTTPPojo.setSurName(info.getSurName());
                 infoHTTPPojo.setFirstName(info.getFirstName());
                 infoHTTPPojo.setSecondName(info.getSecondName());
-                infoHTTPPojo.setBirthday(info.getBirthday().getTime());
+                infoHTTPPojo.setBirthday(info.getBirthday() == null ? null : info.getBirthday().getTime());
                 infoHTTPPojo.setCity(info.getCity());
                 infoHTTPPojo.setDropzone(info.getDropzone());
 
