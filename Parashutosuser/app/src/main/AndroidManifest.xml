@@ -45,8 +45,8 @@
         </activity>
 
         <activity android:name="com.example.parashutosuser.HistoryActivity"
-            android:theme="@style/CustomTheme"
-            android:label="@string/started">
+            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/histiry">
 
         </activity>
 

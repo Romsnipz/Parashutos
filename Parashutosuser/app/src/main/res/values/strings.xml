@@ -3,6 +3,7 @@
     <string name="app_name">Parashutos</string>
     <string name="started">Parashutos</string>
     <string name="info">О себе</string>
+    <string name="histiry">История</string>
     <string name="registration_button">РЕГИСТРАЦИЯ</string>
     <string name="back">НАЗАД К ВХОДУ</string>
     <string name="back_button">отмена</string>

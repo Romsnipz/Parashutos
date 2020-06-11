@@ -207,6 +207,10 @@ public class InfoActivity extends AppCompatActivity {
                 Intent intent = new Intent(InfoActivity.this, RegActivity.class);
                 startActivity(intent);
                 return true;
+            case R.id.action_settings2:
+                Intent intent1 = new Intent(InfoActivity.this, MainActivity.class);
+                startActivity(intent1);
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
