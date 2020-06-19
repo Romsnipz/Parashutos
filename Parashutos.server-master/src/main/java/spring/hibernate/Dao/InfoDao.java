@@ -25,7 +25,7 @@ public class InfoDao {
         info.setSurName(infoedit.getSurName());
         info.setFirstName(infoedit.getFirstName());
         info.setSecondName(infoedit.getSecondName());
-        info.setBirthday(new Date(infoedit.getBirthday()));
+        info.setBirthday(infoedit.getBirthday() != null ? new Date(infoedit.getBirthday()) : null);
         info.setCity(infoedit.getCity());
         info.setDropzone(infoedit.getDropzone());
 
