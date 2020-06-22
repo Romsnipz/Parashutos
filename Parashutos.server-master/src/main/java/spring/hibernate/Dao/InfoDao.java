@@ -28,6 +28,7 @@ public class InfoDao {
         info.setBirthday(infoedit.getBirthday() != null ? new Date(infoedit.getBirthday()) : null);
         info.setCity(infoedit.getCity());
         info.setDropzone(infoedit.getDropzone());
+        info.setQuantity(infoedit.getQuantity());
 
         return infoRepository.save(info);
     }

@@ -10,7 +10,7 @@
         android:id="@+id/editSurName"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="2dp"
         android:ems="10"
         android:hint="Фамилия"
         android:inputType="textPersonName"
@@ -22,7 +22,7 @@
         android:id="@+id/editTextNick2"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -33,7 +33,7 @@
         android:id="@+id/editFirstName"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="2dp"
         android:ems="10"
         android:hint="Имя"
         android:inputType="textPersonName"
@@ -45,7 +45,7 @@
         android:id="@+id/editSecondName"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="2dp"
         android:ems="10"
         android:hint="Отчество"
         android:inputType="textPersonName"
@@ -57,7 +57,7 @@
         android:id="@+id/editCity"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="2dp"
         android:ems="10"
         android:hint="Мой город"
         android:inputType="textPersonName"
@@ -69,7 +69,7 @@
         android:id="@+id/editDropzone"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="2dp"
         android:ems="10"
         android:hint="Любимая дропзона"
         android:inputType="textPersonName"
@@ -81,7 +81,7 @@
         android:id="@+id/editTextDate"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="2dp"
         android:ems="10"
         android:hint="Дата рождения"
         android:inputType="date"
@@ -97,7 +97,7 @@
         android:text="Сохранить"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editDropzone" />
+        app:layout_constraintTop_toBottomOf="@+id/editQuantity" />
 
     <Button
         android:id="@+id/buttoncancel2"
@@ -114,7 +114,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_end="595dp" />
+        app:layout_constraintGuide_end="616dp" />
 
     <Button
         android:id="@+id/buttonedit"
@@ -125,5 +125,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/buttonsave" />
+
+    <EditText
+        android:id="@+id/editQuantity"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="Количество прыжков"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDropzone" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

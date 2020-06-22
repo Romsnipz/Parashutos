@@ -86,6 +86,7 @@ public class ClientService {
                 infoHTTPPojo.setBirthday(info.getBirthday() == null ? null : info.getBirthday().getTime());
                 infoHTTPPojo.setCity(info.getCity());
                 infoHTTPPojo.setDropzone(info.getDropzone());
+                infoHTTPPojo.setQuantity(info.getQuantity());
 
                 loginPair.setClient(userHTTPPojo);
                 loginPair.setInfo(infoHTTPPojo);

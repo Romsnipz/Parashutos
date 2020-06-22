@@ -39,6 +39,7 @@ public class InfoActivity extends AppCompatActivity {
     private EditText editTextDate;
     private EditText editCity;
     private EditText editDropzone;
+    private EditText editQuantity;
     private Button buttonsave;
     private Button buttonedit;
     private Button buttoncancel2;
@@ -81,6 +82,8 @@ public class InfoActivity extends AppCompatActivity {
         editCity.setText(info.getCity());
         editDropzone = (EditText) findViewById(R.id.editDropzone);
         editDropzone.setText(info.getDropzone());
+        editQuantity = (EditText) findViewById(R.id.editQuantity);
+        editQuantity.setText(info.getQuantity());
         buttonsave = (Button) findViewById(R.id.buttonsave);
         buttonedit = (Button) findViewById(R.id.buttonedit);
         buttonedit.requestFocus();
@@ -117,6 +120,7 @@ public class InfoActivity extends AppCompatActivity {
 
                 request.setCity(editCity.getText().toString());
                 request.setDropzone(editDropzone.getText().toString());
+                request.setQuantity(editQuantity.getText().toString());
 
                 doSave(request);
             }
@@ -173,7 +177,8 @@ public class InfoActivity extends AppCompatActivity {
             editSecondName,
             editTextDate,
             editCity,
-            editDropzone
+            editDropzone,
+                editQuantity
         );
     }
 

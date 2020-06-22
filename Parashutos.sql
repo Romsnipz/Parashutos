@@ -27,7 +27,8 @@ CREATE TABLE Information (
     SecondName VARCHAR2(50) NULL,
     Birthday DATE NULL,
     City VARCHAR2(50) NULL,
-    Dropzone VARCHAR(50) NULL,
+    Dropzone VARCHAR2(50) NULL,
+	Quantity VARCHAR2(10) NULL,
     
     CONSTRAINT pk_info PRIMARY KEY (User_Nickname),
     CONSTRAINT fk_info FOREIGN KEY (User_Nickname)

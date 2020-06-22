@@ -35,6 +35,10 @@ public class InfoHTTPDto implements Serializable {
     @Expose
     private String dropzone;
 
+    @SerializedName("Quantity")
+    @Expose
+    private String quantity;
+
     public String getUserNickname() {
         return userNickname;
     }
@@ -89,5 +93,13 @@ public class InfoHTTPDto implements Serializable {
 
     public void setDropzone(String dropzone) {
         this.dropzone = dropzone;
+    }
+
+    public String getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(String quantity) {
+        this.quantity = quantity;
     }
 }

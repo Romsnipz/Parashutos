@@ -29,6 +29,9 @@ public class InfoHTTPPojo {
     @JsonProperty(value = "Dropzone")
     private String dropzone;
 
+    @JsonProperty(value = "Quantity")
+    private String quantity;
+
     public String getUserNickname() {
         return userNickname;
     }
@@ -83,5 +86,13 @@ public class InfoHTTPPojo {
 
     public void setDropzone(String dropzone) {
         this.dropzone = dropzone;
+    }
+
+    public String getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(String quantity) {
+        this.quantity = quantity;
     }
 }

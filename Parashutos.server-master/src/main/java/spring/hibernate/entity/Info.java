@@ -34,6 +34,9 @@ public class Info implements Serializable {
     @Column(name = "Dropzone")
     private String dropzone;
 
+    @Column(name = "Quantity")
+    private String quantity;
+
     public String getUserNickname() {
         return userNickname;
     }
@@ -41,14 +44,6 @@ public class Info implements Serializable {
     public void setUserNickname(String userNickname) {
         this.userNickname = userNickname;
     }
-
-    //    public UserReg getUserReg() {
-//        return userReg;
-//    }
-//
-//    public void setUserReg(UserReg userReg) {
-//        this.userReg = userReg;
-//    }
 
     public String getSurName() {
         return surName;
@@ -98,6 +93,14 @@ public class Info implements Serializable {
         this.dropzone = dropzone;
     }
 
+    public String getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(String quantity) {
+        this.quantity = quantity;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -109,31 +112,13 @@ public class Info implements Serializable {
                 Objects.equals(secondName, info.secondName) &&
                 Objects.equals(birthday, info.birthday) &&
                 Objects.equals(city, info.city) &&
-                Objects.equals(dropzone, info.dropzone);
+                Objects.equals(dropzone, info.dropzone) &&
+                Objects.equals(quantity, info.quantity);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(userNickname, surName, firstName, secondName, birthday, city, dropzone);
+        return Objects.hash(userNickname, surName, firstName, secondName, birthday, city, dropzone, quantity);
     }
-
-    //    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (o == null || getClass() != o.getClass()) return false;
-//        Info info = (Info) o;
-//        return Objects.equals(userReg, info.userReg) &&
-//                Objects.equals(surName, info.surName) &&
-//                Objects.equals(firstName, info.firstName) &&
-//                Objects.equals(secondName, info.secondName) &&
-//                Objects.equals(birthday, info.birthday) &&
-//                Objects.equals(city, info.city) &&
-//                Objects.equals(dropzone, info.dropzone);
-//    }
-//
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(userReg, surName, firstName, secondName, birthday, city, dropzone);
-//    }
 }
 
