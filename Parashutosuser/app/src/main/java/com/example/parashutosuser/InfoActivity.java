@@ -7,6 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -18,7 +19,6 @@ import com.example.parashutosuser.rest.LoginApi;
 import com.example.parashutosuser.rest.NetworkService;
 
 import java.net.HttpURLConnection;
-import java.text.Format;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -43,6 +43,7 @@ public class InfoActivity extends AppCompatActivity {
     private Button buttonsave;
     private Button buttonedit;
     private Button buttoncancel2;
+    private ImageView imageViewInfo;
 
 
     Bundle savedInstanceState;
@@ -88,6 +89,7 @@ public class InfoActivity extends AppCompatActivity {
         buttonedit = (Button) findViewById(R.id.buttonedit);
         buttonedit.requestFocus();
         buttoncancel2 = (Button) findViewById(R.id.buttoncancel2);
+        imageViewInfo = (ImageView) findViewById(R.id.imageViewInfo);
 
         editTextList();
         checkTextEnable(false);

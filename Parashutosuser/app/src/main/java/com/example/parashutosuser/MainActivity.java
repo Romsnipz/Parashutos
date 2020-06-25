@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonjump;
     private Button buttoninfo;
     private Button buttonhistory;
+    private ImageView imageViewNebo2;
 
     Bundle savedInstanceState;
 
@@ -29,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
         buttonjump = (Button) findViewById(R.id.buttonjump);
         buttoninfo = (Button) findViewById(R.id.buttoninfo);
         buttonhistory = (Button) findViewById(R.id.buttonhistory);
+        imageViewNebo2 = (ImageView) findViewById(R.id.imageViewNebo2);
 
         buttonweather.setOnClickListener(new View.OnClickListener() {
             @Override

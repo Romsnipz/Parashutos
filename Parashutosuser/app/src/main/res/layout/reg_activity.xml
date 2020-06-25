@@ -6,18 +6,31 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
+    <ImageView
+        android:id="@+id/imageViewInfo2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/info2" />
+
     <EditText
         android:id="@+id/editEmailAddress"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginRight="32dp"
+        android:background="#B2FFFFFF"
+        android:backgroundTint="#B5B5B5"
         android:ems="10"
         android:hint="Введите Email"
+        android:hyphenationFrequency="none"
         android:inputType="textEmailAddress"
+        android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/guideline" />
@@ -34,12 +47,14 @@
     <EditText
         android:id="@+id/editTextNick"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:layout_marginStart="32dp"
-        android:layout_marginLeft="32dp"
+        android:background="#B2FFFFFF"
+        android:backgroundTint="#B5B5B5"
         android:ems="10"
         android:hint="Введине никнейм"
         android:inputType="textPersonName"
+        android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="@id/editEmailAddress"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editEmailAddress" />
@@ -48,6 +63,8 @@
         android:id="@+id/switchopen"
         android:layout_width="81dp"
         android:layout_height="45dp"
+        android:background="#B2FFFFFF"
+        android:backgroundTint="#B5B5B5"
         android:drawableBottom="@android:drawable/ic_menu_view"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#130E0E"
@@ -60,20 +77,23 @@
         android:id="@+id/buttoncancel"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginTop="150dp"
         android:text="ОТМЕНА"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/guideline3" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
 
     <EditText
         android:id="@+id/editTextPassword"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
+        android:background="#B2FFFFFF"
+        android:backgroundTint="#B5B5B5"
         android:ems="10"
         android:hint="Введите пароль"
         android:inputType="textPassword"
         android:password="true"
+        android:textColorHint="#000000"
         app:layout_constraintEnd_toStartOf="@+id/switchopen"
         app:layout_constraintStart_toStartOf="@id/editEmailAddress"
         app:layout_constraintTop_toBottomOf="@+id/editTextNick" />
@@ -84,13 +104,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_end="570dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_end="370dp" />
 
     <Button
         android:id="@+id/buttonreg"

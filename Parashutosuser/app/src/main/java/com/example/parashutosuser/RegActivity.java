@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Switch;
 import android.widget.Toast;
@@ -37,6 +38,7 @@ public class RegActivity extends AppCompatActivity {
     private Button buttongoodreg;
     private Switch switchopen;
     private ProgressBar progressBarOk;
+    private ImageView imageViewInfo2;
 
     Bundle savedInstanceState;
     boolean flag = true;
@@ -60,6 +62,7 @@ public class RegActivity extends AppCompatActivity {
 
         progressBarOk = (ProgressBar) findViewById(R.id.progressBarOk);
         progressBarOk.setVisibility(View.GONE);
+        imageViewInfo2 = (ImageView) findViewById(R.id.imageViewInfo2);
 
         buttonok.setOnClickListener(new View.OnClickListener() {
             @Override

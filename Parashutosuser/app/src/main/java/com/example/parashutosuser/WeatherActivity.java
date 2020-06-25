@@ -1,15 +1,31 @@
 package com.example.parashutosuser;
 
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class WeatherActivity extends AppCompatActivity {
 
+    private TextView textView;
+    private ImageView imageView;
 
+    Bundle savedInstanceState;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        this.savedInstanceState = savedInstanceState;
+        setContentView(R.layout.weather_activity);
+
+        textView = (TextView) findViewById(R.id.textView);
+        imageView = (ImageView) findViewById(R.id.imageView);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

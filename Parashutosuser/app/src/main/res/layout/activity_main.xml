@@ -7,6 +7,17 @@
     android:layout_height="match_parent"
     android:layout_alignParentLeft="false">
 
+    <ImageView
+        android:id="@+id/imageViewNebo2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/nebo2" />
+
     <Button
         android:id="@+id/buttonweather"
         android:layout_width="200dp"
@@ -53,5 +64,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_end="613dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
