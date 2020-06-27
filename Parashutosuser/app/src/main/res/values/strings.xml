@@ -9,7 +9,7 @@
     <string name="back_button">отмена</string>
     <string name="error">Оййййййййй</string>
     <string name="ipdead">Сеть умерла</string>
-    <string name="user_not_found">Такой пользователь не зарегестрирован</string>
+    <string name="user_not_found">Такой пользователь не зарегистрирован</string>
     <string name="incorrect_password">Неверный пароль, а функции поменять нет, ХА, вспоминай</string>
     <string name="tostart">На главную</string>
     <string name="exit">Выйти</string>
