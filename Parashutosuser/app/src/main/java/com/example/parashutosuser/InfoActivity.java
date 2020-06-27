@@ -174,12 +174,12 @@ public class InfoActivity extends AppCompatActivity {
 
     public void editTextList() {
         infoTextEdits = Arrays.asList(
-            editSurName,
-            editFirstName,
-            editSecondName,
-            editTextDate,
-            editCity,
-            editDropzone,
+                editSurName,
+                editFirstName,
+                editSecondName,
+                editTextDate,
+                editCity,
+                editDropzone,
                 editQuantity
         );
     }
