@@ -112,7 +112,7 @@ public class MathmodActivity extends AppCompatActivity {
 
                 a = g - g*(p*Cx*St);
 
-                if (Hightmax < 1000) {
+                if (Hightmax >= 200 && Hightmax < 1000) {
                     timeCritOpen = Math.sqrt(2*(Hightmax-200)/a);
                     String TT = String.format("%.2f", timeCritOpen);
                     if (timeCritOpen > Time) {
