@@ -17,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
     private Button buttonjump;
     private Button buttoninfo;
     private Button buttonhistory;
+    private Button buttonmap;
+    private Button buttoncald;
     private ImageView imageViewNebo2;
 
     Bundle savedInstanceState;
@@ -31,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         buttonjump = (Button) findViewById(R.id.buttonjump);
         buttoninfo = (Button) findViewById(R.id.buttoninfo);
         buttonhistory = (Button) findViewById(R.id.buttonhistory);
+        buttonmap = (Button) findViewById(R.id.buttonmap);
+        buttoncald = (Button) findViewById(R.id.buttoncald);
         imageViewNebo2 = (ImageView) findViewById(R.id.imageViewNebo2);
 
         buttonweather.setOnClickListener(new View.OnClickListener() {
@@ -63,6 +67,22 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, HistoryActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        buttonmap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, MapActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        buttoncald.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CalendarActivity.class);
                 startActivity(intent);
             }
         });

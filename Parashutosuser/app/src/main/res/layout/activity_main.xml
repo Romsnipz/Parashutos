@@ -14,16 +14,19 @@
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/nebo2" />
 
     <Button
         android:id="@+id/buttonweather"
         android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="32dp"
-        android:text="WEATHER"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/checkbox_off_background"
+        android:text="ПОГОДА"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
@@ -31,8 +34,9 @@
     <Button
         android:id="@+id/buttonjump"
         android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/checkbox_off_background"
         android:text="ПРЫГНУТЬ"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,8 +45,9 @@
     <Button
         android:id="@+id/buttoninfo"
         android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/checkbox_off_background"
         android:text="О СЕБЕ"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -51,8 +56,9 @@
     <Button
         android:id="@+id/buttonhistory"
         android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="50dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/checkbox_off_background"
         android:text="ИСТОРИЯ"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,6 +70,28 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_end="613dp" />
+
+    <Button
+        android:id="@+id/buttonmap"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/checkbox_off_background"
+        android:text="КАРТА"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonhistory" />
+
+    <Button
+        android:id="@+id/buttoncald"
+        android:layout_width="200dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/checkbox_off_background"
+        android:text="КАЛЕНДАРЬ"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonmap" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

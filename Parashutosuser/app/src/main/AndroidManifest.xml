@@ -3,6 +3,11 @@
     package="com.example.parashutosuser">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -47,6 +52,27 @@
         <activity android:name="com.example.parashutosuser.HistoryActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:label="@string/histiry">
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name="com.example.parashutosuser.MapActivity"
+            android:theme="@style/CustomTheme"
+            android:label="@string/title_activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <activity android:name="com.example.parashutosuser.CalendarActivity"
+            android:theme="@style/CustomTheme"
+            android:label="@string/started">
 
         </activity>
 

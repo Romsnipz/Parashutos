@@ -15,6 +15,7 @@
     <string name="exit">Выйти</string>
     <string name="incorrect">Некорректные данные</string>
     <string name="dateex">Неверно записана дата (дд.мм.гггг)</string>
+    <string name="title_activity_maps">Map</string>
 
     <string-array name="jumps">
         <item>С максимальным ускорением</item>
